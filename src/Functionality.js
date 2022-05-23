@@ -2,15 +2,18 @@ import styled from 'styled-components'
 import { useState } from 'react'
 
 const Container = styled.div`
+  margin: 0;
+  padding: 0;
   width: 100vw;
   height: 100vh;
   position: relative;
-  margin: 0 auto;
   overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
 `
 
 const RandomDiv = styled.div`
-  margin: 5px;
+  padding: 5px;
   position: absolute;
   top: ${(props) => props.positionVertical};
   left: ${(props) => props.positionHorizontal};
